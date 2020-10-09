@@ -8,7 +8,6 @@
 {
    background();
   int sum= 0;
-  int total = 0;
   for(int y = 0; y < 600; y = y + 205)
   {
     for(int x = 0; x < 600; x= x + 205)
@@ -18,7 +17,6 @@
      if (bob.sides > 0)
      {
        sum = sum + bob.sides;
-       total = total + sum;
      } else {
        sum = sum *0;
      }
@@ -34,7 +32,7 @@
   }
   class Die
   { 
-      int sides, sum, numDots, myX, myY;      
+      int sides, myX, myY;      
       Die(int x, int y) 
       {
           myX = x;
