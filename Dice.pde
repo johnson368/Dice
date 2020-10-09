@@ -6,7 +6,7 @@
   }
   void draw()
 {
-   clear();
+   background();
   int sum= 0;
   int total = 0;
   for(int y = 0; y < 600; y = y + 205)
