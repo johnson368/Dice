@@ -1,6 +1,5 @@
    void setup()
   {
-    background (0,0,0);
     size(600,700);
       noLoop();
   }
@@ -33,17 +32,13 @@
       redraw();
   }
   class Die
-  {
-     
+  { 
       int sides, sum, numDots, myX, myY;      
-      Die(int x, int y) //constructor
+      Die(int x, int y) 
       {
-          //variable initializations here
           myX = x;
           myY = y;
           sides = (int)(Math.random()* 6) +1;
-
-
       }
       void roll()
       {
@@ -53,35 +48,35 @@
       {
         noStroke();
         fill(173,250,230);
-        square(myX,myY,200);
+        rect(myX,myY,200, 200);
         fill(0,0,0);
         if (sides == 1) {
-        circle (myX+100, myY+100, 25);
+        ellipse (myX+100, myY+100, 25, 25);
         } else if (sides ==2) {
-          circle (myX+150, myY+150, 25);
-          circle (myX+50, myY+50, 25);
+          ellipse (myX+150, myY+150, 25, 25);
+          ellipse (myX+50, myY+50, 25,25);
         } else if (sides ==3) {
-           circle (myX+100, myY+100, 25);
-            circle (myX+150, myY+150, 25);
-          circle (myX+50, myY+50, 25);
+           ellipse (myX+100, myY+100, 25,25);
+            ellipse (myX+150, myY+150, 25,25);
+          ellipse (myX+50, myY+50, 25,25);
         } else if ( sides ==4) {
-           circle (myX+150, myY+150, 25);
-          circle (myX+50, myY+50, 25);
-           circle (myX+50, myY+150, 25);
-            circle (myX+150, myY+50, 25);
+           ellipse (myX+150, myY+150, 25, 25);
+          ellipse (myX+50, myY+50, 25,25);
+           ellipse (myX+50, myY+150, 25,25);
+            ellipse (myX+150, myY+50, 25,25);
         } else if (sides ==5) {
-            circle (myX+150, myY+150, 25);
-          circle (myX+50, myY+50, 25);
-           circle (myX+50, myY+150, 25);
-            circle (myX+150, myY+50, 25);
-             circle (myX+100, myY+100, 25);
+            ellipse (myX+150, myY+150, 25,25);
+          ellipse (myX+50, myY+50, 25,25);
+           ellipse (myX+50, myY+150, 25,25);
+            ellipse (myX+150, myY+50, 25,25);
+             ellipse (myX+100, myY+100, 25,25);
         } else if (sides ==6) {
-           circle (myX+150, myY+150, 25);
-          circle (myX+50, myY+50, 25);
-           circle (myX+50, myY+150, 25);
-            circle (myX+150, myY+50, 25);
-             circle (myX+50, myY+100, 25);
-              circle (myX+150, myY+100, 25);
+           ellipse (myX+150, myY+150, 25,25);
+          ellipse (myX+50, myY+50, 25,25);
+           ellipse (myX+50, myY+150, 25,25);
+            ellipse (myX+150, myY+50, 25,25);
+             ellipse (myX+50, myY+100, 25,25);
+              ellipse (myX+150, myY+100, 25,25);
         }
       }
   }
